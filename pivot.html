@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script src='anim.js'></script>
+        <script>
+            window.addEventListener( 'load', function () {
+                addBoxes(
+                    'Name',  0, 0, 0, 0,
+                    'Day',  1, 0, -1000, 0,
+                    'Sales',  2, 0, -1000, 0
+                );
+                setColor( '#dddddd' );
+                addBoxes(
+                    'Abe', 0, 1, 0, 1,
+                    'Abe', 0, 2, 0, 1,
+                    'Abe', 0, 3, 0, 1,
+                    'Amy', 0, 4, 0, 2,
+                    'Amy', 0, 5, 0, 2,
+                    'Amy', 0, 6, 0, 2
+                );
+                setColor( '#ddddff' );
+                addBoxes(
+                    'Mon', 1, 1, 1, 0,
+                    'Tue', 1, 2, 2, 0,
+                    'Wed', 1, 3, 3, 0,
+                    'Mon', 1, 4, 1, 0,
+                    'Tue', 1, 5, 2, 0,
+                    'Wed', 1, 6, 3, 0
+                );
+                setColor( '#ddffdd' );
+                addBoxes(
+                    '39', 2, 1, 1, 1,
+                    '68', 2, 2, 2, 1,
+                    '10', 2, 3, 3, 1,
+                    '93', 2, 4, 1, 2,
+                    '85', 2, 5, 2, 2,
+                    '0', 2, 6, 3, 2
+                );
+            } );
+        </script>
+    </head>
+    <body>
+        <h1>Pivot</h1>
+        <pre>df.pivot( index="Name", columns="Day", values="Sales" )</pre>
+        <hr/>
+    </body>
+</html>

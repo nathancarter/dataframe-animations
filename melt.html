@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <script src='anim.js'></script>
+        <script>
+            window.addEventListener( 'load', function () {
+                addBoxes(
+                    'Last',     0, 0, 0, 0,
+                    'First',    1, 0, 1, 0,
+                    'variable', -1000, 0, 2, 0,
+                    'value',    -1000, 0, 3, 0
+                );
+                setColor( '#ffdddd' );
+                addBoxes(
+                    'SAT',      2, 0, 2, 1,
+                    'SAT',      2, 0, 2, 2,
+                    'SAT',      2, 0, 2, 3,
+                    'ACT',      3, 0, 2, 4,
+                    'ACT',      3, 0, 2, 5,
+                    'ACT',      3, 0, 2, 6,
+                    'GPA',      4, 0, 2, 7,
+                    'GPA',      4, 0, 2, 8,
+                    'GPA',      4, 0, 2, 9
+                );
+                setColor( '#dddddd' );
+                addBoxes(
+                    'Abe', 0, 1, 0, 1,
+                    'Abe', 0, 1, 0, 2,
+                    'Abe', 0, 1, 0, 3,
+                    'Amy', 0, 2, 0, 4,
+                    'Amy', 0, 2, 0, 5,
+                    'Amy', 0, 2, 0, 6,
+                    'Art', 0, 3, 0, 7,
+                    'Art', 0, 3, 0, 8,
+                    'Art', 0, 3, 0, 9
+                );
+                setColor( '#dddddd' );
+                addBoxes(
+                    'Smith', 1, 1, 1, 1,
+                    'Smith', 1, 1, 1, 2,
+                    'Smith', 1, 1, 1, 3,
+                    'Sully', 1, 2, 1, 4,
+                    'Sully', 1, 2, 1, 5,
+                    'Sully', 1, 2, 1, 6,
+                    'Smart', 1, 3, 1, 7,
+                    'Smart', 1, 3, 1, 8,
+                    'Smart', 1, 3, 1, 9
+                );
+                setColor( '#ddddff' );
+                addBoxes(
+                    '123', 2, 1, 3, 1,
+                    '234', 2, 2, 3, 2,
+                    '345', 2, 3, 3, 3
+                );
+                setColor( '#ddffdd' );
+                addBoxes(
+                    '456', 3, 1, 3, 4,
+                    '567', 3, 2, 3, 5,
+                    '678', 3, 3, 3, 6
+                );
+                setColor( '#ffffdd' );
+                addBoxes(
+                    '2.0', 4, 1, 3, 7,
+                    '3.0', 4, 2, 3, 8,
+                    '4.0', 4, 3, 3, 9
+                );
+            } );
+        </script>
+    </head>
+    <body>
+        <h1>Melt</h1>
+        <pre>pd.melt( df, id_vars=["Last","First"], value_vars=["SAT","ACT","GPA"] )</pre>
+        <hr/>
+    </body>
+</html>
