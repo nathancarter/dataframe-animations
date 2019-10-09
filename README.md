@@ -9,6 +9,8 @@ pandas operations
 [stack](https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.DataFrame.stack.html)/[unstack](https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.DataFrame.unstack.html).
 (Links are to pandas documentation.)
 
-## [View the animations online here.](http://nathancarter.github.io/dataframe-animations)
+## [View the animations online here.](http://nathancarter.github.io/dataframe-animations/)
 
-License: LGPL 3.0
+## License
+
+LGPL 3.0
