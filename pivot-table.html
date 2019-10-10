@@ -4,49 +4,64 @@
         <script>
             window.addEventListener( 'load', function () {
                 addBoxes(
-                    'First',      0, 0, 0, 0,
-                    'Last',       1, 0, 1, 0,
-                    'Sales',      2, 0, 2, 0,
-                    'Sales?', -1000, 0, 2, 0
+                    'First',        1, 0,     0, 2,
+                    'Last',         2, 0,     1, 2,
+                    'Customer',     3, 0,     1, 1,
+                    'Sale',         4, 0,     2, 0, { w2 : 2 },
+                    '',             0, 0, -1000, 0,
+                    '',         -1000, 0,     2, 2,
+                    '',         -1000, 0,     3, 2,
+                    '',         -1000, 0,     0, 0,
+                    '',         -1000, 0,     1, 0,
+                    '',         -1000, 0,     0, 1,
+                    '0',            0, 1, -1000, 1,
+                    '1',            0, 2, -1000, 1,
+                    '2',            0, 3, -1000, 1,
+                    '3',            0, 4, -1000, 2,
+                    '4',            0, 5, -1000, 2,
+                    '5',            0, 6, -1000, 2,
                 );
                 setColor( '#dddddd' );
                 addBoxes(
-                    'Abe', 0, 1, 0, 1,
-                    'Abe', 0, 2, 0, 1,
-                    'Abe', 0, 3, 0, 1,
-                    'Amy', 0, 4, 0, 2,
-                    'Amy', 0, 5, 0, 2,
-                    'Amy', 0, 6, 0, 2
+                    'Abe', 1, 1, 0, 3,
+                    'Abe', 1, 2, 0, 3,
+                    'Abe', 1, 3, 0, 3,
+                    'Amy', 1, 4, 0, 4,
+                    'Amy', 1, 5, 0, 4,
+                    'Amy', 1, 6, 0, 4,
                 );
-                setColor( '#dddddd' );
                 addBoxes(
-                    'Axel', 1, 1, 1, 1,
-                    'Axel', 1, 2, 1, 1,
-                    'Axel', 1, 3, 1, 1,
-                    'Arnt', 1, 4, 1, 2,
-                    'Arnt', 1, 5, 1, 2,
-                    'Arnt', 1, 6, 1, 2
+                    'Axel', 2, 1, 1, 3,
+                    'Axel', 2, 2, 1, 3,
+                    'Axel', 2, 3, 1, 3,
+                    'Arnt', 2, 4, 1, 4,
+                    'Arnt', 2, 5, 1, 4,
+                    'Arnt', 2, 6, 1, 4,
+                );
+                setColor( '#ddddff' );
+                addBoxes(
+                    'X Co.',  3, 1, 2, 1,
+                    'Y Inc.', 3, 2, 3, 1,
+                    'X Co.',  3, 3, 2, 1,
+                    'Y Inc.', 3, 4, 3, 1,
+                    'X Co.',  3, 5, 2, 1,
+                    'Y Inc.', 3, 6, 3, 1,
                 );
                 setColor( '#ddffdd' );
                 addBoxes(
-                    '39', 2, 1, 2, 1,
-                    '68', 2, 2, 2, 1,
-                    '10', 2, 3, 2, 1,
-                    '93', 2, 4, 2, 2,
-                    '85', 2, 5, 2, 2,
-                    '0',  2, 6, 2, 2
-                );
-                setColor( '#bbffbb' );
-                addBoxes(
-                    'Agg?', -1000, 0, 2, 1,
-                    'Agg?', -1000, 0, 2, 2
+                    '39', 4, 1, 2, 3,
+                    '68', 4, 2, 3, 3,
+                    '10', 4, 3, 2, 3,
+                    '93', 4, 4, 3, 4,
+                    '85', 4, 5, 2, 4,
+                    '0',  4, 6, 3, 4,
                 );
             } );
         </script>
     </head>
     <body>
         <h1>Pivot Table</h1>
-        <pre>df.pivot_table( index="Name", columns="Day", values="Sales", aggfunc="?" )</pre>
+        <pre>df.pivot_table( index=["First","Last"], columns="Sale", aggfunc="sum" )</pre>
         <hr/>
     </body>
 </html>
