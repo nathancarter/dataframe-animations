@@ -75,5 +75,12 @@ window.addEventListener( 'load', function () {
     main = document.createElement( 'div' );
     main.style.position = 'relative';
     document.body.appendChild( main );
+    const params = new URLSearchParams( window.location.search );
+    if ( params.get( 'hide-title' ) ) {
+        const headers = document.body.getElementsByTagName( 'H1' );
+        for ( var i = 0 ; i < headers.length ; i++ ) {
+            headers[i].style.display = 'none';
+        }
+    }
 } );
 
